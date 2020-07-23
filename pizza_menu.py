@@ -85,14 +85,19 @@ if __name__ == "__main__":
     pizza.add_menu_item(MenuItem("Meat Lovers", 33.33))
     pizza.add_menu_item(MenuItem("Veggie Delight", 22.22))
 
-    cp = MenuItem("custom_pizza", 44.44, [
+    pizza.add_menu_item(MenuItem("custom_pizza", 44.44, [
         ChoiceSet("crust", [
             Choice("Regular"),
             Choice("Thin"),
             Choice("Deep", 5.00),
-        ])])
+        ]),
+        ChoiceSet("cheese", [
+            Choice("Regular"),
+            Choice("Mozzarella"),
+            Choice("Vegan Cheese", 6.00),
+        ])
 
-    pizza.add_menu_item(cp)
+    ]))
 
     menu = Menu()
     menu.add_category(pizza)
@@ -102,12 +107,13 @@ if __name__ == "__main__":
     order.item_list.append(LineItem(selection, quantity=2))
 
     custom_selection = menu.category_list[0].menu_items[2]
-    order.item_list.append(LineItem(selection, quantity=2, choices=[
-        custom_selection.choice_sets[0].choice_list[2]  # crust - deep
+    order.item_list.append(LineItem(custom_selection, quantity=1, choices=[
+        custom_selection.choice_sets[0].choice_list[2],  # crust - deep
+        custom_selection.choice_sets[1].choice_list[2]
     ]))
 
     for item in order.item_list:
         print(item)
         for choice in item.choices:
-            print(choice)
+            print(f"\t{choice}")
     print(f"TOTAL: {order.total():.2f}")
