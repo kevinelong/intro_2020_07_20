@@ -1,0 +1,37 @@
+PLAIN ENGLISH:
+Problem Statement.
+
+Size? SMALL(10"), MEDIUM(15"), LARGE (18")
+CrustType: Thin, Deep, Regular, Gluten Free
+
+Toppings? Veg, Meat: (Pepperoni, Sausage), None
+
+Cheese?: Vegan, Regular, White Ricotta, Mozzarella, Fontina, None
+
+Sauce:  Regular Red Tomato, Marinara, Garlic, None
+
+Anything Else?
+    Another Pizza?
+    Beverage
+
+Last thing?
+
+Total price is ...
+Ask how to pay
+collect card number - encypt card number?
+
+Pick Up or Delivery
+
+If Delivery:
+    Customer Details:
+        Address:
+            Street Address
+            City, State, Postal Code
+        Phone?
+    Estimated Delivery Time
+        Current time + cook time + delivery time
+    Actual Ship Time
+    Actual Delivery Time
+
+Save Order
+

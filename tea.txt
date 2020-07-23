@@ -1,0 +1,31 @@
+TEA
+
+How to make
+
+Get Cup from Cupboard
+
+Kettle
+put water in the kettle while kettle is not full
+Get Water from faucet (or filtered)
+put in kettle
+
+put kettle on stove
+turn stove on
+
+while kettle is not boiling:
+    WAIT
+
+turn stove off
+put tea(bag or looseleaf in vessel) in cup
+
+while cup not full:
+    pour water from kettle into cup
+
+while tea temp > 190:
+    WAIT
+
+tea.discard_tea
+tea.add_option("milk", ounces=0.125 )
+tea.add_option("sugar", lumps=1)
+
+tea.drink()

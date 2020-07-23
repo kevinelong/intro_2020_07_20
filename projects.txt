@@ -1,0 +1,32 @@
+
+Default: Pizza Order
+
+Lesser Alt: Shopping Cart
+
+Cyndi: Pizza
+
+David: Pizza?
+
+Kurtis: Pizza
+
+Mathew: Pizza
+
+Michael:
+Every few week request to audit types of routers 85k sites
+count of models.
+
+Tool exports csv
+QTY COUNT(MODEL) GROUP by MODEL
+
+Mickey: Pizza
+
+Nicholas: Boat
+methods:
+heading
+speed
+apply_time
+new lat long
+
+Patrick: Pizza
+
+Peter: Log? time delta Pizza delivery duration?
